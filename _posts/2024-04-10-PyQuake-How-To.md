@@ -1,6 +1,11 @@
 ---
-layout: post
-title: PyQuake Indepth Guide
+title: "PyQuake How To"
+excerpt_separator: "<!--more-->"
+categories:
+  - Guide
+tags:
+  - Guide
+  - PyQuake
 ---
 
 ## Stay Informed About Earthquakes with PyQuake-cli!
