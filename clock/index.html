@@ -33,16 +33,11 @@
   <script>
     const clock = document.querySelector('.clock');
 
-function updateClock() {
+    function updateClock() {
       const date = new Date();
       const hours = date.getUTCHours();
       const minutes = date.getUTCMinutes();
       const seconds = date.getUTCSeconds();
-
-      // Add a condition to check if the time is less than 10 and add a leading zero if necessary
-      hours = hours < 10 ? '0' + hours : hours;
-      minutes = minutes < 10 ? '0' + minutes : minutes;
-      seconds = seconds < 10 ? '0' + seconds : seconds;
 
       document.getElementById('hours').textContent = hours;
       document.getElementById('minutes').textContent = minutes;
