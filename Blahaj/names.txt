@@ -1,6 +1,5 @@
 Mushroom
 Pretzel
-sharky
 blahaj
 bla
 Swim shady
@@ -19,7 +18,6 @@ Karl
 Fred
 Malin
 Zara
-Sharkie
 Markie
 kwarkie
 harkie
@@ -36,16 +34,15 @@ Toothy
 Mini-Bite
 Shrimpy
 Dinky
-Sharky
 Shork
 Marie
 Emma
 Arte
-Blaha
+haj
 Maha
 indigo
 cobalt
-Captain Ahajb
+Captain Ab
 Same Inu
 Nimona
 Bruce
@@ -57,10 +54,10 @@ Gilbert
 Esther
 Jen
 Dale
-Hajy
+sharky
 Kona
 Java
-Blåtho
+tho
 gloobert
 Frederic
 Freddie
@@ -79,14 +76,14 @@ Nibbles
 Raven
 Sir Not Appearing In This Film
 Toothy.
-blahj
+haaaj
 Mr Shonkie
 Softie
 Laha
 Sir ShonkAlot
 Terry
 Shanky
-smolhaj
+smol
 Sushi
 Pablo
 Chomp
@@ -110,18 +107,18 @@ Sputnik
 Apollo
 Jeffrey
 Jim-bob
-Henry haj
+Henry 
 Nap Shark
 Nap Shark Jr
 Nester
-Blahhhh
+hhhh
 Oswald
 Ozzy
 Stella
 Célestine
 river
-Obi-Haj
-Hajsoka
+Obi-haj
+soka
 Tony
 the shonk
 Anakin skywater
@@ -141,11 +138,10 @@ Finn
 Jeremy
 jimmy
 Squishy
-Bla
 Smols quish
 Mini squish
 Lil Squish
-Bighaj
+Big
 Chonk
 Frank
 Beautiful
@@ -160,7 +156,7 @@ Boris
 Mike
 Elliot
 Sven
-Blahjjy
+hajjjy
 Goober
 King Shark
 shark friend
@@ -190,7 +186,7 @@ Bruce Deuce
 Haibert
 Haidelinde
 Steve
-Hajdar
+hajdar
 Haiko
 Hainrich
 Khai
@@ -199,3 +195,6 @@ Theodric
 Lewin
 Fjalar
 Akiva
+Mark
+Jaws
+Celeste
