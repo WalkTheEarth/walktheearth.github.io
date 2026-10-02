@@ -1,70 +1,180 @@
 <!doctype html>
+<!-- WalkTheEarth portfolio — hand-written HTML & CSS, no build step -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
     <title>WalkTheEarth | Developer Portfolio</title>
-    <meta name="description" content="Developer passionate about creating unique command-line tools and fun demos. Explore my projects including PyQuake-cli, ratlocker, and more." />
+    <meta
+      name="description"
+      content="Jakub Kuriata (WalkTheEarth) — student developer in Dunfermline, Scotland. Command-line tools, data experiments and fun demos: PyQuake-cli, ratlocker, PocketLab and more."
+    />
     <meta name="author" content="Jakub Kuriata (WalkTheEarth)" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <link rel="canonical" href="https://walktheearth.github.io/" />
 
     <meta property="og:title" content="WalkTheEarth | Developer Portfolio" />
-    <meta property="og:description" content="Developer passionate about creating unique command-line tools and fun demos." />
+    <meta
+      property="og:description"
+      content="Command-line tools, data experiments and fun demos — by Jakub Kuriata (WalkTheEarth)."
+    />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://walktheearth.github.io/" />
 
-    <link rel="stylesheet" crossorigin href="index.css">
-
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d1117'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='13' fill='%233fb950'%3E%26gt%3B_%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
-    <div style="max-width: 900px; margin: 0 auto; padding: 40px 20px; font-family: monospace;">
-      <h1>WalkTheEarth</h1>
-      <p style="font-size: 1.1em; color: #888; margin-bottom: 2em;">Developer | Command-Line Tools | Fun Demos</p>
-      
-      <h2>About</h2>
-      <p>
-        Hi, I'm Jakub Kuriata (WalkTheEarth), a student developer based in Dunfermline, UK.
-        I'm passionate about creating unique command-line tools and fun demos. I enjoy exploring
-        different programming languages and turning data into exciting experiences.
-      </p>
+    <a class="skip" href="#main">skip to content</a>
 
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>PyQuake-cli</strong> - Gets the last 10~ earthquakes and outputs them in your terminal <a href="https://github.com/WalkTheEarth/PyQuake-cli">[GitHub]</a>
-        </li>
-        <li>
-          <strong>ratlocker</strong> - Harmless ransomware demo <a href="https://github.com/WalkTheEarth/ratlocker">[GitHub]</a>
-        </li>
-        <li>
-          <strong>SQADL</strong> - SQA past exams downloader <a href="https://github.com/WalkTheEarth/SQADL">[GitHub]</a>
-        </li>
-        <li>
-          <strong>EarthquakeDataCenters</strong> - Lists of earthquake datacenters <a href="https://github.com/WalkTheEarth/EarthquakeDataCenters">[GitHub]</a>
-        </li>
-        <li>
-          <strong>PocketLab</strong> - PROJECT: Pocket-sized homelab <a href="https://github.com/WalkTheEarth/PocketLab">[GitHub]</a>
-        </li>
-        <li>
-          <strong>StartIsCracked</strong> - StartIsBack Crack <a href="https://github.com/WalkTheEarth/StartIsCracked">[GitHub]</a>
-        </li>
-      </ul>
+    <div class="wrap">
+      <header>
+        <p class="prompt"><span class="sym">~ $</span> whoami</p>
+        <h1>WalkTheEarth<span class="cursor" aria-hidden="true"></span></h1>
+        <p class="tagline">Jakub Kuriata — student developer, command-line tools &amp; fun demos</p>
+        <nav class="links" aria-label="Profiles">
+          <a href="https://github.com/WalkTheEarth">GitHub</a>
+          <a href="mailto:jakubkuriata@protonmail.com">Email</a>
+          <a href="https://jakubkuriata.carrd.co">Website</a>
+        </nav>
+      </header>
 
-      <h2>Contact</h2>
-      <p>
-        Feel free to explore my repository and connect with me!<br>
-        Email: <a href="mailto:jakubkuriata@protonmail.com">jakubkuriata@protonmail.com</a><br>
-        GitHub: <a href="https://github.com/WalkTheEarth">github.com/WalkTheEarth</a>
-      </p>
-      
-      <div style="margin-top: 2em;">
+      <main id="main">
+        <section id="about">
+          <h2><span class="sym">$</span> cat about.md</h2>
+          <p>
+            Hi, I'm Jakub Kuriata (WalkTheEarth), a student developer based in Dunfermline,
+            Scotland. I'm passionate about creating unique command-line tools and fun demos.
+            I enjoy exploring different programming languages and turning data into exciting
+            experiences.
+          </p>
+        </section>
+
+        <section id="projects">
+          <h2><span class="sym">$</span> ls ~/projects</h2>
+          <ul class="cards">
+            <li class="card">
+              <a class="name" href="https://github.com/WalkTheEarth/PyQuake-cli">PyQuake-cli</a>
+              <p>Pulls the USGS earthquake feed and renders the latest quakes right in your terminal.</p>
+              <p class="meta"><span class="lang"><span class="dot l-py"></span>Python</span></p>
+            </li>
+            <li class="card">
+              <a class="name" href="https://github.com/WalkTheEarth/EarthquakeDataCenters">EarthquakeDataCenters</a>
+              <p>A worldwide list of Seedlink, Earthworm and Winston Wave Server data centres.</p>
+              <p class="meta"><span class="lang">Data list</span><span class="stars" aria-label="1 GitHub star">★&nbsp;1</span></p>
+            </li>
+            <li class="card">
+              <a class="name" href="https://github.com/WalkTheEarth/PocketLab">PocketLab</a>
+              <p>A pocket-sized homelab — Raspberry Pi CM4, NVMe storage, custom 18650 powerbank. Still sourcing parts.</p>
+              <p class="meta"><span class="lang">Hardware</span></p>
+            </li>
+            <li class="card">
+              <a class="name" href="https://github.com/WalkTheEarth/SQADL">SQADL</a>
+              <p>Downloads past papers from the Scottish Qualifications Authority.</p>
+              <p class="meta"><span class="lang"><span class="dot l-py"></span>Python</span></p>
+            </li>
+            <li class="card">
+              <a class="name" href="https://github.com/WalkTheEarth/ratlocker">ratlocker</a>
+              <p>A harmless, proof-of-concept ransomware demo — the scare without the damage.</p>
+              <p class="meta"><span class="lang"><span class="dot l-ps"></span>PowerShell</span></p>
+            </li>
+            <li class="card">
+              <a class="name" href="https://github.com/WalkTheEarth/StartIsCracked">StartIsCracked</a>
+              <p>A crack for StartIsBack, written in PowerShell.</p>
+              <p class="meta"><span class="lang"><span class="dot l-ps"></span>PowerShell</span></p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="more">
+          <h2><span class="sym">$</span> ls ~/projects/more</h2>
+          <ul class="more">
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/altgen">altgen</a>
+              <span class="desc">Meteor Client addon: one-click TheAltening alt generation and relogin from the kick/ban screen.</span>
+              <span class="lang"><span class="dot l-java"></span>Java</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/ChessBot">ChessBot</a>
+              <span class="desc">Deep reinforcement learning chess bot — DQN, experience replay, target networks, multi-threading.</span>
+              <span class="lang"><span class="dot l-py"></span>Python</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/FinalLap">FinalLap</a>
+              <span class="desc">An AI agent skill that audits a site's security, accessibility, UX and SEO, then fixes what it can.</span>
+              <span class="lang">Tooling</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/Hardnested-recovery">Hardnested-recovery</a>
+              <span class="desc">MIFARE Classic key recovery from hardened cards — ciphertext-only cryptanalysis with bitsliced brute force.</span>
+              <span class="lang"><span class="dot l-c"></span>C</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/life360">life360</a>
+              <span class="desc">LSPosed module that unlocks Life360's hidden debug menu, with a reverse-engineered API reference.</span>
+              <span class="lang"><span class="dot l-java"></span>Java</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/Blahaj">Blahaj</a>
+              <span class="desc">A name chooser for your Blahaj plush.</span>
+              <span class="lang"><span class="dot l-html"></span>HTML</span>
+              <span class="stars" aria-label="3 GitHub stars">★&nbsp;3</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/PyRecall-cli">PyRecall-cli</a>
+              <span class="desc">Finds product recalls and alerts you from the comfort of your terminal.</span>
+              <span class="lang"><span class="dot l-py"></span>Python</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/TypingGame">TypingGame</a>
+              <span class="desc">Audio speed typer — hear a word, type it back, track your WPM.</span>
+              <span class="lang"><span class="dot l-ts"></span>TypeScript</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/2626">2626</a>
+              <span class="desc">Imitates the dice from xkcd 2626.</span>
+              <span class="lang"><span class="dot l-py"></span>Python</span>
+            </li>
+            <li>
+              <a class="name" href="https://github.com/WalkTheEarth/BookDLBot">BookDLBot</a>
+              <span class="desc">A Telegram bot for downloading books.</span>
+              <span class="lang"><span class="dot l-py"></span>Python</span>
+            </li>
+          </ul>
+          <p class="note">
+            I also help maintain
+            <a href="https://github.com/WalkTheEarth/Art-Class-Proxy">Art-Class-Proxy</a> —
+            not my project, just keeping it alive.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2><span class="sym">$</span> cat contact.md</h2>
+          <ul class="contact">
+            <li><span class="key">email</span><a href="mailto:jakubkuriata@protonmail.com">jakubkuriata@protonmail.com</a></li>
+            <li><span class="key">github</span><a href="https://github.com/WalkTheEarth">github.com/WalkTheEarth</a></li>
+            <li><span class="key">website</span><a href="https://jakubkuriata.carrd.co">jakubkuriata.carrd.co</a></li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
         <a title="250KB Club page" href="https://250kb.club/walktheearth-pw">
           <img
             alt="badge: proud member of the 250KB Club"
             src="https://250kb.club/88x31_dark.png"
+            width="88"
+            height="31"
           />
         </a>
-      </div>
+        <p>Hand-written HTML &amp; CSS — no frameworks, no trackers, no build step.</p>
+      </footer>
     </div>
   </body>
 </html>
